@@ -12,33 +12,33 @@ btnHeader.onclick = function() {
 }
 
 // Start Check internet 
-// window.onload = function() {
+window.onload = function() {
 
-// if(window.navigator.onLine) {
-//     onlinePage()
-// }
+if(window.navigator.onLine) {
+    onlinePage()
+}
 
-// else{
-//     oflinePage()
-// }
-// }
+else{
+    oflinePage()
+}
+}
 
-// window.addEventListener('online', function(){
-//     onlinePage()
-// })
+window.addEventListener('online', function(){
+    onlinePage()
+})
 
-// window.addEventListener('offline', function(){
-//     oflinePage()
-// })
+window.addEventListener('offline', function(){
+    oflinePage()
+})
 
 
-// function onlinePage(){
-//     ofline.style.opacity = '0'
-// }
+function onlinePage(){
+    ofline.style.opacity = '0'
+}
 
-// function oflinePage(){
-//     ofline.style.opacity = '1'
-// }
+function oflinePage(){
+    ofline.style.opacity = '1'
+}
 
 // end Check internet 
 

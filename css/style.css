@@ -355,7 +355,7 @@ main .cv {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
   margin-top: 30px;
 }
 
@@ -366,8 +366,80 @@ main .home-page .view-cv{
   font-size: 20px;
   color: white;
   letter-spacing: .9px;
-  /* background-color: green; */
   position: relative;
+  overflow: hidden;
+}
+main .home-page .view-cv span{
+  position: absolute;
+  display: block;
+}
+main .home-page .view-cv span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,goldenrod);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+main .home-page .view-cv span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,goldenrod);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+main .home-page .view-cv span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,goldenrod);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+main .home-page .view-cv span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,goldenrod);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
 }
 
 main .home-page .view-cv::before {
@@ -557,9 +629,9 @@ main .home-page .view-cv:hover::before{
   flex-wrap: wrap;
 }
 
-@media (max-width: 1070px){
-  .portfolio .box-container{
-    justify-content: center;
+@media (max-width: 1000px){
+  .portfolio .container{
+    padding-left: 20px;
   }
 }
 
@@ -572,7 +644,7 @@ main .home-page .view-cv:hover::before{
   border-radius: 8px;
 }
 
-@media(max-width: 489px) {
+@media(max-width: 505px) {
   .portfolio .box-container .box{
     width: 300px;
   }
