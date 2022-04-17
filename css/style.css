@@ -31,10 +31,10 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-  background:white;
+  background:rgb(138, 138, 138);
 }
 html::-webkit-scrollbar-thumb:hover{
-  background: var(--colorJob);
+  background: var(--colorWhite);
 }
 
 body{
