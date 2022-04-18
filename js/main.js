@@ -9,6 +9,7 @@ let btnScroll = document.querySelector('.scroll-top i')
 
 btnHeader.onclick = function() {
     header.classList.toggle('toggle-header')
+    btnHeader.classList.toggle('fa-spin')
 }
 
 // Start Check internet 
@@ -60,10 +61,8 @@ btnScroll.onclick = function() {
         left:0,
     })
 }
-
 // end Scroll top 
 // Start canva page home 
-
 
 let resizeReset = function() {
     w = canvasBody.width = window.innerWidth;

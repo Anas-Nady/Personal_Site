@@ -193,7 +193,7 @@ header{
   }
 }
 
-header > i{
+header  .icon-user{
   position: absolute;
   right: -30px;
   top: 25%;
@@ -210,7 +210,7 @@ header > i{
 }
 
 @media (max-width: 1000px){
-  header > i{
+  header > .icon-user{
     opacity: 1;
   }
 }
@@ -286,6 +286,14 @@ animation-delay: 0.1s;
 
 /* end header  */
 /* Start main */
+
+
+
+section{
+  position: relative;
+  padding-top: var(--paddingTop);
+  padding-bottom: var(--paddingBottom);
+}
 
 
 main{
@@ -462,12 +470,6 @@ main .home-page .view-cv:hover::before{
 /* end main  */
 /* Start section About me  */
 
-.About-me{
-  position: relative;
-  padding-top: var(--paddingTop);
-  padding-bottom: var(--paddingBottom);
-}
-
 .About-me .data-personal{
   display: flex;
   justify-content: space-between;
@@ -540,13 +542,6 @@ main .home-page .view-cv:hover::before{
 
 /* end section about  */
 /* Start Education  */
-
-.Education{
-  position: relative;
-  padding-top: var(--paddingTop) ;
-  padding-bottom: var(--paddingBottom);
-}
-
 .Education .box-container{
   display: flex;
   justify-content: space-between;
@@ -611,15 +606,8 @@ main .home-page .view-cv:hover::before{
       width: 100% ;
   }
 }
-
 /* end Education  */
 /* Start portfolio */
-
-.portfolio{
-  position: relative;
-  padding-top: var(--paddingTop) ;
-  padding-bottom: var(--paddingBottom) ;
-}
 
 .portfolio .box-container{
   display: flex;
@@ -669,7 +657,6 @@ main .home-page .view-cv:hover::before{
   -o-transform: scale(1.2);
 }
 
-
 .portfolio .box-container .box .case-box{
   position: absolute;
   width: 100%;
@@ -696,8 +683,6 @@ main .home-page .view-cv:hover::before{
 /* Start Contact  */
 
 .contact-me{
-  position: relative;
-  padding-top: var(--paddingTop);
   padding-bottom: 30px;
 }
 
@@ -767,10 +752,6 @@ main .home-page .view-cv:hover::before{
   margin-bottom: 10px;
   border: none;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
 .contact-me .message-form .send{
