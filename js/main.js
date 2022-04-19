@@ -47,10 +47,10 @@ function oflinePage(){
 window.onscroll = function() {
 
     if (window.pageYOffset >= 800) {
-    btnScroll.style.display = 'block'
+    btnScroll.style.opacity = 1
     }
     else{
-    btnScroll.style.display = 'none'
+    btnScroll.style.opacity = 0
     }
 
 }

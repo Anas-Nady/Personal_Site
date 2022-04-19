@@ -155,14 +155,9 @@ textarea::placeholder{
   line-height: 50px;
   text-align: center;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  display: none;
   cursor: pointer;
+  transition: .5s;
 }
-
 
 /* start header */
 header{
