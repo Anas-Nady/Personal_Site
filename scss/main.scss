@@ -278,7 +278,7 @@ main{
             width: 90%;
         }
         .box{
-            background-color: #57575733;
+            background-color: hsla(0, 0%, 34%, 0.2);
             height: 120px;
             padding: 20px;
             width: 300px;
@@ -472,7 +472,7 @@ main{
             border-radius: 4px;
          }
          .send{
-            width: fit-content !important;
+            width: 150px !important;
             color: $colorJob;
             letter-spacing: .9px;
             cursor: pointer;

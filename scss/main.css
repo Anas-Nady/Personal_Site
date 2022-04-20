@@ -63,7 +63,7 @@ section {
   transform: translateX(-50%);
   font-size: 50px;
   font-weight: normal;
-  color: gold;
+  color: #ffd900;
   width: 100%;
   text-align: center; }
   @media (max-width: 600px) {
@@ -102,7 +102,7 @@ section {
   z-index: 1111; }
 
 .scroll-top i {
-  color: gold;
+  color: #ffd900;
   background-color: #1f1f1f;
   width: 50px;
   height: 50px;
@@ -136,7 +136,7 @@ header {
     right: -30px;
     top: 25%;
     background-color: #7e7e7e;
-    color: gold;
+    color: #ffd900;
     padding: 8px;
     border-radius: 2px;
     cursor: pointer;
@@ -155,7 +155,7 @@ header {
       margin-bottom: 10px; }
     header .text-content .job {
       letter-spacing: 1px;
-      color: rgba(238, 238, 238, 0.733); }
+      color: rgba(237, 237, 237, 0.733); }
   header .social-media {
     margin-top: 20px; }
     header .social-media i {
@@ -214,11 +214,11 @@ main {
         main .home-page .myName {
           font-size: 25px; } }
       main .home-page .myName .title-name {
-        color: gold; }
+        color: #ffd900; }
     main .home-page .message-visitor {
       text-transform: capitalize;
       letter-spacing: 1px;
-      color: rgba(238, 238, 238, 0.733);
+      color: rgba(237, 237, 237, 0.733);
       line-height: 1.6; }
     main .home-page .view-cv {
       display: block;
@@ -239,7 +239,7 @@ main {
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: gold;
+        background-color: #ffd900;
         transition: 0.3s;
         z-index: -1; }
       main .home-page .view-cv span {
@@ -323,7 +323,7 @@ main {
       text-transform: capitalize;
       letter-spacing: .9px; }
       .About-me .data-personal .info-data > h3 > span {
-        color: #ffeb3bc4; }
+        color: rgba(255, 236, 61, 0.769); }
 .About-me .box-data {
   margin-right: 50px;
   width: 30%;
@@ -333,7 +333,7 @@ main {
     .About-me .box-data {
       width: 90%; } }
   .About-me .box-data .box {
-    background-color: #57575733;
+    background-color: rgba(87, 87, 87, 0.2);
     height: 120px;
     padding: 20px;
     width: 300px;
@@ -342,7 +342,7 @@ main {
     margin-bottom: 10px; }
     .About-me .box-data .box span {
       font-size: 30px;
-      color: gold;
+      color: #ffd900;
       display: flex;
       justify-content: center;
       margin-bottom: 10px; }
@@ -379,10 +379,10 @@ main {
   position: relative;
   margin-bottom: 50px;
   padding-left: 50px;
-  border-left: 1px solid #ffeb3bc4; }
+  border-left: 1px solid rgba(255, 236, 61, 0.769); }
   .Education .box-skills h3 {
     font-size: 25px;
-    color: #ffeb3bc4;
+    color: rgba(255, 236, 61, 0.769);
     margin: 0 0 20px;
     font-weight: normal;
     letter-spacing: .9px; }
@@ -469,7 +469,7 @@ main {
     font-size: 20px;
     margin-bottom: 20px; }
   .contact-me .data-text a {
-    color: rgba(238, 238, 238, 0.733); }
+    color: rgba(237, 237, 237, 0.733); }
     .contact-me .data-text a:hover {
       color: blue; }
   .contact-me .message-form {
@@ -482,17 +482,17 @@ main {
         padding: 20px 20px;
         color: #fff;
         background-color: #1f1f1f;
-        caret-color: gold;
+        caret-color: #ffd900;
         margin-bottom: 10px;
         border: none;
         border-radius: 4px; }
       .contact-me .message-form > form .send {
-        width: fit-content !important;
-        color: gold;
+        width: 150px !important;
+        color: #ffd900;
         letter-spacing: .9px;
         cursor: pointer;
         background: none;
-        border: 1px solid gold;
+        border: 1px solid #ffd900;
         position: relative; }
     @media (max-width: 680px) {
       .contact-me .message-form {
