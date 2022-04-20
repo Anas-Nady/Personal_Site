@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    user-select: none;
+}
+
+  body{
+    background-color: $backgroundColor;
+    color: $colorWhite;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 330px;
+    @media (max-width: 1000px){
+      padding-left: 0;
+  }
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color: $colorWhite;
+}
+
+
+.container{ 
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width: 1300px){
+        padding-left: 80px;
+      }
+
+      @media (max-width: 900px){
+        padding-left: 50px;
+      }
+  }
+
+
+  html::-webkit-scrollbar{
+    width: 15px;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background:#222;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background:rgb(138, 138, 138);
+    &:hover{
+    background: $colorWhite;
+    }
+  }
+  .toggle-header{
+    left: 0px !important;
+  }
+  
+
+  section{
+    position: relative;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+  }
