@@ -16,14 +16,16 @@ header{
     width: 330px;
     min-height: 100vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     z-index: 1000;
     transition: $mainTransition;
     @media (max-width: 1000px){
         left: -330px;
+    }
+    .header-content{
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
     }
 .icon-user{
     position: absolute;
@@ -179,7 +181,7 @@ main{
                         left: 100%;
                     }
                   }
-                  &::nth-child(2){
+                  &:nth-child(2){
                     top: -100%;
                     right: 0;
                     width: 2px;

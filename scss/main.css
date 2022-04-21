@@ -122,15 +122,16 @@ header {
   width: 330px;
   min-height: 100vh;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   z-index: 1000;
   transition: 0.3s; }
   @media (max-width: 1000px) {
     header {
       left: -330px; } }
+  header .header-content {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute; }
   header .icon-user {
     position: absolute;
     right: -30px;
@@ -257,7 +258,7 @@ main {
     left: -100%; }
   50%,100% {
     left: 100%; } }
-        main .home-page .view-cv span::nth-child(2) {
+        main .home-page .view-cv span:nth-child(2) {
           top: -100%;
           right: 0;
           width: 2px;
