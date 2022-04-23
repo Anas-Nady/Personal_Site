@@ -8,7 +8,7 @@
     <title>Anas NadY</title>
     <link rel="icon" href="images/icon.jpg">
     <link rel="stylesheet" href="css/all.min.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="scss/main.css">
         <!-- [if lt IE 9] >
@@ -17,20 +17,20 @@
 </head>
 <body>
 
-<div class="ofline">
+<div class="ofline position-fixed d-flex justify-content-between rounded">
         <i class="fa-solid fa-wifi"></i>
         <p>Internet disconnected</p>
 </div>
 
-<div class="scroll-top">
-        <i class="fa-solid fa-arrow-up"></i>
+<div class="scroll-top position-fixed">
+        <i class="fa-solid fa-arrow-up text-center rounded"></i>
 </div>
 
 <!-- Start header  -->
-<header class="heaader" id="header">
-    <div class="icon-user"><i class="fa-solid fa-user btn-header fa-spin"></i></div>
-           <div class="header-content">
-                <img src="images/personal-photo.png"  alt="Anas Nady">
+<header class="heaader position-fixed min-vh-100 text-center" id="header">
+    <div class="icon-user position-absolute rounded"><i class="fa-solid fa-user btn-header fa-spin"></i></div>
+           <div class="header-content position-absolute">
+                <img src="images/personal-photo.png"  alt="Anas Nady" class="rounded">
                 <div class="text-content">
                     <div class="name">Anas NadY</div>
                     <span class="job">Full Stack developer</span>
@@ -45,18 +45,18 @@
 </header>
 <!-- end header  -->
 <!-- Start main page  -->
-<main class="main-page" id="main-page">
-    <canvas id="canvas"></canvas>  
-    <div class="home-page">
-        <span>Hi There !</span>
-        <div class="myName">I'm <span class="title-name"> Anas Abdallah Nady</span></div>
-        <p class="message-visitor typed">I'm very happy with your presence in my personal website to browse the site to see business and skills.</p>
-        <div class="cv">
-            <a href="#" class="view-cv">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+<main class="main-page w-100 vh-100 position-relative " id="main-page">
+    <canvas class="position-absolute d-block s-0 t-0 w-100" id="canvas" ></canvas>  
+    <div class="home-page position-absolute">
+        <span class="d-block">Hi There !</span>
+        <div class="myName fs-1">I'm <span class="title-name"> Anas Abdallah Nady</span></div>
+        <p class="message-visitor text-capitalize">I'm very happy with your presence in my personal website to browse the site to see business and skills.</p>
+        <div class="cv rounded position-relative">
+            <a href="#" class="view-cv d-block border-none position-relative overflow-hidden">
+                <span class="position-absolute d-block"></span>
+                <span class="position-absolute d-block"></span>
+                <span class="position-absolute d-block"></span>
+                <span class="position-absolute d-block"></span>
                 View Cs
             </a>
         </div>
@@ -64,71 +64,71 @@
 </main>
 <!-- end main page  -->
 <!-- Start about me  -->
-<section class="About-me container" id="about-me">
-    <h1 class="title-section">About Me</h1>
+<section class="About-me container position-relative" id="about-me">
+    <h1 class="title-section position-absolute  fw-normal  text-center">About Me</h1>
 
-    <div class="data-personal">
+    <div class="data-personal d-flex justify-content-between align-items-center flex-wrap">
         <div class="info-data">
-            <h3>Name : <span>Anas Abdallah Nady</span></h3>
-            <h3>age : <span>19</span></h3>
-            <h3>countery : <span>Egypt - Sharkia Governorate - Bilbes</span></h3>
-            <h3>Qualification : <span>HTI "Higher Technology Institute"</span></h3>
-            <h3>Language : <span>Arabic & English</span></h3>
-            <h3>Current Qualification : <span>Student i have a higher technology institute department of computer science</span></h3>
+            <h5 class="fw-noraml text-capitalize">Name : <span>Anas Abdallah Nady</span></h3>
+            <h5 class="fw-noraml text-capitalize">age : <span>19 Years</span></h3>
+            <h5 class="fw-noraml text-capitalize">countery : <span>Egypt - Sharkia Governorate - Bilbes</span></h3>
+            <h5 class="fw-noraml text-capitalize">Qualification : <span>HTI "Higher Technology Institute"</span></h3>
+            <h5 class="fw-noraml text-capitalize">Language : <span>Arabic & English</span></h3>
+            <h5 class="fw-noraml text-capitalize">Current Qualification : <span>Student i have a higher technology institute department of computer science</span></h3>
         </div>
-        <div class="box-data">
+        <div class="box-data d-flex flex-wrap">
             <div class="box">
-                <span>0</span>
-                <h3>years of experience</h3>
+                <span class="d-flex justify-content-center">0</span>
+                <h3 class="text-center text-capitalize">years of experience</h3>
             </div>
     
-            <div class="box">
-                <span>99+</span>
-                <h3>porject completed</h3>
+            <div class="box flex-wrap">
+                <span class="d-flex justify-content-center">99+</span>
+                <h3 class="text-center text-capitalize">porject completed</h3>
             </div>
     
-            <div class="box">
-                <span>99+</span>
-                <h3>happy clients</h3>
+            <div class="box flex-wrap"">
+                <span class="d-flex justify-content-center">99+</span>
+                <h3 class="text-center text-capitalize">happy clients</h3>
             </div>
     
-            <div class="box">
-                <span>12+</span>
-                <h3>awards won</h3>
+            <div class="box flex-wrap"">
+                <span class="d-flex justify-content-center">12+</span>
+                <h3 class="text-center text-capitalize">awards won</h3>
             </div>
         </div>
     </div>
 </section>
 <!-- end about me  -->
 <!-- Start Education  -->
-<section class="Education container" id="education">
-    <h1 class="title-section">My Education</h1>
-    <div class="box-container">
-        <div class="box-skills Front-end">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Front end developer</h3>
+<section class="Education container position-relative" id="education">
+    <h1 class="title-section position-absolute  fw-normal  text-center">My Education</h1>
+    <div class="box-container d-flex justify-content-between flex-wrap">
+        <div class="box-skills Front-end position-relative">
+                <i class="fas fa-graduation-cap position-absolute"></i>
+                <h3 class="fw-normal">Front end developer</h3>
                 <ul>
-                    <li>Html & Html5</li>
-                    <li>Pug.js</li>
-                    <li>Css & Css3</li>
-                    <li>Scss & lass</li>
-                    <li>Gulp.js</li>
-                    <li>AJAX & JSON</li>
-                    <li>Java Script </li>
-                    <li>Vue.Js</li>
-                    <li>React.Js</li>
-                    <li>Python</li>
-                    <li>BootStrap</li>
-                    <li>Wordpress</li>
+                    <li class="position-relative">Html & Html5</li>
+                    <li class="position-relative">Pug.js</li>
+                    <li class="position-relative">Css & Css3</li>
+                    <li class="position-relative">Scss & lass</li>
+                    <li class="position-relative">Gulp.js</li>
+                    <li class="position-relative">AJAX & JSON</li>
+                    <li class="position-relative">Java Script </li>
+                    <li class="position-relative">Vue.Js</li>
+                    <li class="position-relative">React.Js</li>
+                    <li class="position-relative">Python</li>
+                    <li class="position-relative">BootStrap</li>
+                    <li class="position-relative">Wordpress</li>
                 </ul>
             </div>
-            <div class="box-skills back-end ">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Back end developer</h3>
+            <div class="box-skills back-end h-100 position-relative">
+                <i class="fas fa-graduation-cap position-absolute"></i>
+                <h3 class="fw-normal">Back end developer</h3>
                 <ul>
-                    <li>Laravel</li>
-                    <li>My SQl</li>
-                    <li>PHP</li>
+                    <li class="position-relative">Laravel</li>
+                    <li class="position-relative">My SQl</li>
+                    <li class="position-relative">PHP</li>
                 </ul>
             </div>
     </div>
@@ -137,54 +137,54 @@
 <!-- end Education  -->
 <!-- Start Portfolio -->
 
-<section class="portfolio">
-    <div class="title-section">My Portfolio</div>
-    <div class="box-container container">
-        <div class="box"> 
-            <a href="https://anas-nady.github.io/Template_one/"><img src="images/discount.png" alt=""></a>
+<section class="portfolio position-relative">
+    <div class="title-section position-absolute  fw-normal  text-center">My Portfolio</div>
+    <div class="box-container container d-flex justify-content-center align-items-center flex-wrap">
+        <div class="box position-relative rounded overflow-hidden"> 
+            <a href="https://anas-nady.github.io/Template_one/"><img src="images/discount.png" alt="disconnected" class="w-100 h-100"></a>
         </div>
-        <div class="box"> 
-            <a href="https://anas-nady.github.io/eComperce_one/"><img src="images/eComperce_one.jpg" alt=""></a>
+        <div class="box position-relative rounded overflow-hidden"> 
+            <a href="https://anas-nady.github.io/eComperce_one/"><img src="images/eComperce_one.jpg" alt="eComperce_one" class="w-100 h-100"></a>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0"><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
-        <div class="box"> 
+        <div class="box position-relative rounded overflow-hidden"> 
             <!-- <a href="#"><img src="images/01.png" alt=""></a> -->
-            <div class="case-box"><h3>تحت الانشاء</h3></div>
+            <div class="case-box position-absolute w-100 h-100 t-0 s-0""><h3 class="position-absolute">تحت الانشاء</h3></div>
         </div>
     </div>
 </section>
@@ -192,21 +192,21 @@
 <!-- end Portfolio -->
 <!-- Start Contact me  -->
 
-<section class="contact-me">
-    <div class="title-section">Contact Me</div>
-    <div class="contact-content container">
+<section class="contact-me position-relative">
+    <div class="title-section position-absolute  fw-normal  text-center">Contact Me</div>
+    <div class="contact-content container d-flex justify-content-between align-items-center">
         <div class="data-text">
-            <h3 class="contact-info">Contact Info</h3>
+            <h3 class="contact-info fw-normal">Contact Info</h3>
             <div class="my-email"><a href="#">eng.anas.nady@gmail.com</a></div>
             <div class="my-number"><a href="https://wa.me/01211076875" target="_blank">01211076875</a></div>
         </div>
         <div class="message-form">
             <form method="post">
-                <input type="text" dir="auto" name="Name-User" id="name-user" required placeholder="Your-Name">
-                <input type="email" dir="auto" placeholder="Your-Email" id="email-user" required>
-                <input type="number" dir="auto" placeholder="Your-Phone" id="phone-user">
-                <textarea name="message-user" dir="auto" id="message-user" placeholder="Your-Message "></textarea>
-                <input type="submit" value="Send Message" class="send"> 
+                <input class="d-block w-100 rounded" type="text" dir="auto" name="Name-User" id="name-user" required placeholder="Your-Name">
+                <input class="d-block w-100 rounded" type="email" dir="auto" placeholder="Your-Email" id="email-user" required>
+                <input class="d-block w-100 rounded" type="number" dir="auto" placeholder="Your-Phone" id="phone-user">
+                <textarea class="d-block w-100 rounded" name="message-user" dir="auto" id="message-user" placeholder="Your-Message "></textarea>
+                <input type="submit" value="Send Message" class="send position-relative"> 
             </form>
         </div>
     </div>
