@@ -103,13 +103,12 @@ main{
         margin-bottom: 10px;
         }
         .myName{
-            text-transform: capitalize;
             margin-bottom: 20px;
             @media(max-width: 600px){
                 font-size: 25px;
             }
             .title-name{
-          color: $colorJob;
+        color: $colorJob;
             }
         }
         .message-visitor{
@@ -117,13 +116,17 @@ main{
             color: $colorGray;
             line-height: 1.6;
         }
+        .cv{
+            cursor: pointer;
+        }
         .view-cv{
             padding: 8px 20px;
             font-size: 20px;
             color: $colorWhite;
             letter-spacing: .9px;
+            cursor: pointer;
             &:hover::before{
-             height: 100%;
+            height: 100%;
             }
             &::before{
                 content: "";
@@ -145,42 +148,42 @@ main{
                     height: 2px;
                     background: linear-gradient(90deg,transparent,goldenrod);
                     animation: animate1 1s linear infinite;
-                  }
-                  @keyframes animate1{
-                    0%{
-                        left: -100%;
-                    }
-                    50%,100%{
-                        left: 100%;
-                    }
-                  }
-                  &:nth-child(2){
+                }
+                @keyframes animate1{
+                0%{
+                    left: -100%;
+                }
+                50%,100%{
+                    left: 100%;
+                }
+                }
+                &:nth-child(2){
+                top: -100%;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(180deg,transparent,goldenrod);
+                animation: animate2 1s linear infinite;
+                animation-delay: 0.25s;
+                }
+                @keyframes animate2{
+                0%{
                     top: -100%;
-                    right: 0;
-                    width: 2px;
-                    height: 100%;
-                    background: linear-gradient(180deg,transparent,goldenrod);
-                    animation: animate2 1s linear infinite;
-                    animation-delay: 0.25s;
-                  }
-                  @keyframes animate2{
-                    0%{
-                        top: -100%;
-                    }
-                    50%,100%{
-                        top: 100%;
-                    }
-                  }
-                  &:nth-child(3){
-                    bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: linear-gradient(270deg,transparent,goldenrod);
-                    animation: animate3 1s linear infinite;
-                    animation-delay: 0.50s;
-                  }
-                  @keyframes animate3{
+                }
+                50%,100%{
+                    top: 100%;
+                }
+                }
+                &:nth-child(3){
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(270deg,transparent,goldenrod);
+                animation: animate3 1s linear infinite;
+                animation-delay: 0.50s;
+                }
+                @keyframes animate3{
                     0%{
                         right: -100%;
                     }
@@ -325,8 +328,8 @@ main{
         .box-container{
         padding-top: $paddingTop;
         .box{
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             margin: 10px;
             @media(max-width: 505px) {
                 width: 300px;
@@ -361,60 +364,68 @@ main{
 
 
   /* Start Contact  */
-  
-  .contact-me{
+
+.contact-me{
     padding-bottom: 30px;
     .contact-content {
         @media (max-width: 680px){
             flex-direction: column;
         }
-      }
-      .contact-info{
+    }
+    .contact-info{
         font-size: 40px;
         margin-bottom: 20px;
         @media (max-width: 680px){
             font-size: 30px;
         }
-      }
-      .data-text{
+    }
+    .data-text{
         @media (max-width: 680px){
             margin-bottom: 60px;
-          }
-          .my-email{
+        }
+        .my-email{
             font-size: 20px;
             margin-bottom: 20px;
-          }
-          a{
+        }
+        a{
             color: $colorGray;
             &:hover{
                 color: blue;
-             }
-          }
-      }
-      .message-form{
+            }
+        }
+
+        .social-media{
+            padding: 20px 0;
+            a{
+                margin:  0 10px;
+                font-size: 20px;
+            }
+        }
+    }
+    .message-form{
         width: 55%;
         > form{
-         width: 84%;
-         > input, textarea{
+        width: 84%;
+        > input, textarea{
             padding: 20px 20px;
             color: $colorWhite;
             background-color: $backgroundSecound;
             caret-color: $colorJob;
             margin-bottom: 10px;
             border: none;
-         }
-         .send{
+        }
+        .send{
             width: 150px !important;
             color: $colorJob;
             letter-spacing: .9px;
             cursor: pointer;
             background: none;
             border: 1px solid $colorJob;
-         }
         }
-        @media (max-width: 680px){
-            width: 100%;
-        }
-      }
-  }
+    }
+    @media (max-width: 680px){
+        width: 100%;
+    }
+    }
+}
   /* end Contact  */

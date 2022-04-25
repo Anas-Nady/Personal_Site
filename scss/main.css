@@ -181,7 +181,6 @@ main {
       font-size: 20px;
       margin-bottom: 10px; }
     main .home-page .myName {
-      text-transform: capitalize;
       margin-bottom: 20px; }
       @media (max-width: 600px) {
         main .home-page .myName {
@@ -192,11 +191,14 @@ main {
       letter-spacing: 1px;
       color: rgba(237, 237, 237, 0.733);
       line-height: 1.6; }
+    main .home-page .cv {
+      cursor: pointer; }
     main .home-page .view-cv {
       padding: 8px 20px;
       font-size: 20px;
       color: #fff;
-      letter-spacing: .9px; }
+      letter-spacing: .9px;
+      cursor: pointer; }
       main .home-page .view-cv:hover::before {
         height: 100%; }
       main .home-page .view-cv::before {
@@ -349,8 +351,8 @@ main {
 .portfolio .box-container {
   padding-top: 100px; }
   .portfolio .box-container .box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 10px; }
     @media (max-width: 505px) {
       .portfolio .box-container .box {
@@ -395,6 +397,11 @@ main {
     color: rgba(237, 237, 237, 0.733); }
     .contact-me .data-text a:hover {
       color: blue; }
+  .contact-me .data-text .social-media {
+    padding: 20px 0; }
+    .contact-me .data-text .social-media a {
+      margin: 0 10px;
+      font-size: 20px; }
   .contact-me .message-form {
     width: 55%; }
     .contact-me .message-form > form {
