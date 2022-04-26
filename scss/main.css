@@ -11,15 +11,12 @@ body {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   padding-left: 330px; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     body {
       padding-left: 0; } }
 
 li {
   list-style: none; }
-
-a {
-  text-decoration: none; }
 
 input::placeholder,
 textarea::placeholder {
@@ -30,7 +27,7 @@ textarea::placeholder {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  @media (max-width: 1300px) {
+  @media (min-width: 901px) {
     .container {
       padding-left: 80px; } }
   @media (max-width: 900px) {
@@ -44,7 +41,8 @@ html::-webkit-scrollbar-track {
   background: #222; }
 
 html::-webkit-scrollbar-thumb {
-  background: #8a8a8a; }
+  background: #8a8a8a;
+  border-radius: 10px; }
   html::-webkit-scrollbar-thumb:hover {
     background: #fff; }
 
@@ -110,7 +108,7 @@ header {
   width: 330px;
   z-index: 1000;
   transition: 0.3s; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     header {
       left: -330px; } }
   header .header-content {
@@ -125,7 +123,7 @@ header {
     padding: 8px;
     cursor: pointer;
     opacity: 0; }
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
       header .icon-user {
         opacity: 1; } }
   header img {
@@ -147,7 +145,7 @@ header {
       cursor: pointer; }
 
 /* Start animation icon  */
-#apple, #twitter, #github, #facebook {
+#linkedin, #codepen, #github, #whatsapp, #email {
   background-color: #18191f;
   color: #fff;
   box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,inset 2px 2px 10px #00000080;
@@ -157,11 +155,14 @@ header {
 #twitter {
   animation-delay: 0.3s; }
 
-#facebook {
-  animation-delay: 0.7s; }
+#email {
+  animation-delay: 0.5s; }
 
 #github {
   animation-delay: 0.1s; }
+
+#whatsapp {
+  animation-delay: .7; }
 
 @keyframes animate {
   from {
@@ -191,14 +192,13 @@ main {
       letter-spacing: 1px;
       color: rgba(237, 237, 237, 0.733);
       line-height: 1.6; }
-    main .home-page .cv {
-      cursor: pointer; }
     main .home-page .view-cv {
       padding: 8px 20px;
       font-size: 20px;
       color: #fff;
       letter-spacing: .9px;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       main .home-page .view-cv:hover::before {
         height: 100%; }
       main .home-page .view-cv::before {
@@ -280,7 +280,9 @@ main {
         width: 90%; } }
     .About-me .data-personal .info-data > h5 {
       margin-bottom: 20px;
-      letter-spacing: .9px; }
+      letter-spacing: .9px;
+      text-transform: capitalize;
+      font-weight: normal; }
       .About-me .data-personal .info-data > h5 > span {
         line-height: 1.7;
         color: rgba(255, 236, 61, 0.769); }
@@ -335,7 +337,8 @@ main {
   .Education .box-skills ul li {
     font-size: 20px;
     margin-bottom: 15px;
-    list-style: none; }
+    list-style: none;
+    position: relative; }
     .Education .box-skills ul li::before {
       content: "";
       position: absolute;
@@ -353,7 +356,10 @@ main {
   .portfolio .box-container .box {
     width: 300px;
     height: 300px;
-    margin: 10px; }
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px; }
     @media (max-width: 505px) {
       .portfolio .box-container .box {
         width: 300px; } }
@@ -396,7 +402,7 @@ main {
   .contact-me .data-text a {
     color: rgba(237, 237, 237, 0.733); }
     .contact-me .data-text a:hover {
-      color: blue; }
+      text-decoration: underline; }
   .contact-me .data-text .social-media {
     padding: 20px 0; }
     .contact-me .data-text .social-media a {
@@ -413,6 +419,9 @@ main {
         caret-color: #ffd900;
         margin-bottom: 10px;
         border: none; }
+      .contact-me .message-form > form textarea {
+        height: 150px;
+        resize: none; }
       .contact-me .message-form > form .send {
         width: 150px !important;
         color: #ffd900;

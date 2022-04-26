@@ -2,15 +2,34 @@
 let body  =  document.querySelector('body')
 let btnHeader = document.querySelector('.btn-header')
 let header = document.querySelector('header')
-let iconMoon = document.querySelector('.fa-moon')
-let iconSun = document.querySelector('.fa-sun')
 let ofline = document.querySelector('.ofline')
 let btnScroll = document.querySelector('.scroll-top i')
 
-btnHeader.onclick = function() {
+
+// Hide header In Screen Phone and add Button is Show header
+btnHeader.addEventListener('click', (e) => {
+
     header.classList.toggle('toggle-header')
     btnHeader.classList.toggle('fa-spin')
-}
+
+    // stop Propagation To Click btnHeader
+    e.stopPropagation()
+});
+
+// Stop Propagation To Click Header 
+header.addEventListener('click', (e) => {
+
+    e.stopPropagation()
+});
+
+// Click Anywhere Outside header toggle
+document.addEventListener('click', (e) => {
+
+    if (e.target !== btnHeader || e.target !== header) {
+        header.classList.remove('toggle-header')
+    }
+
+});
 
 // Start Check internet 
 window.onload = function() {
