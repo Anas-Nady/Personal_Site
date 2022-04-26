@@ -395,7 +395,8 @@ main {
         font-size: 30px; } }
   @media (max-width: 680px) {
     .contact-me .data-text {
-      margin-bottom: 60px; } }
+      margin-bottom: 60px;
+      margin-left: -40px; } }
   .contact-me .data-text .my-email {
     font-size: 20px;
     margin-bottom: 20px; }
