@@ -101,6 +101,9 @@ section {
   cursor: pointer;
   transition: .5s;
   opacity: 0; }
+  .scroll-top i:hover {
+    background-color: rgba(255, 236, 61, 0.769);
+    color: black; }
 
 /*Start Header*/
 header {

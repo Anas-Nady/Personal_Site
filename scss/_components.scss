@@ -53,6 +53,10 @@
     cursor: pointer;
     transition: .5s;
     opacity: 0;
+    &:hover{
+      background-color: $colorData;
+      color: black;
+    }
   }
 }
 
