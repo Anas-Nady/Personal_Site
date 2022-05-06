@@ -4,9 +4,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   outline: none;
-  user-select: none;
 }
-
+::selection{
+  color: white;
+  background-color: brown;
+}
 body {
   background-color: #111111;
   color: #fff;
